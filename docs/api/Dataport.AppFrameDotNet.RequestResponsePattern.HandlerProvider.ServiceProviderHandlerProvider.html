@@ -73,7 +73,7 @@
   
   <h1 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider" class="text-break">Class ServiceProviderHandlerProvider
   </h1>
-  <div class="markdown level0 summary"><p>Ermittelt Handler mittels <see cref="!:IServiceProvider"></see>.</p>
+  <div class="markdown level0 summary"><p>Ermittelt Handler mittels <span class="xref">System.IServiceProvider</span>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -85,18 +85,42 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.html">Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ServiceProviderHandlerProvider : object, IHandlerProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public class ServiceProviderHandlerProvider : IHandlerProvider</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider__ctor_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider__ctor_IServiceProvider_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(IServiceProvider)">ServiceProviderHandlerProvider(IServiceProvider)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider__ctor_System_IServiceProvider_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(System.IServiceProvider)">ServiceProviderHandlerProvider(IServiceProvider)</h4>
   <div class="markdown level1 summary"><p>Konstruktor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -115,7 +139,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="xref">System.IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td><p>ServiceProvider, aus dem die Handler bezogen werden sollen.</p>
 </td>
@@ -146,7 +170,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;&gt;</td>
         <td><p>Eine Sequenz mit den Handlern, die den Request-Typen verarbeiten.</p>
 </td>
       </tr>

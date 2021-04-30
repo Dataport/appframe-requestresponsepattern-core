@@ -86,11 +86,35 @@ der einen bestimmten Request-Typen bedient.</p>
     <h5>Implements</h5>
     <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.html">Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_HandlerProviderForRequest_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class HandlerProviderForRequest&lt;TRequest&gt; : object, IHandlerProvider where TRequest : IRequestBase</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class HandlerProviderForRequest&lt;TRequest&gt; : IHandlerProvider where TRequest : IRequestBase</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -132,7 +156,7 @@ der einen bestimmten Request-Typen bedient.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;T&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;T&gt;&gt;</td>
         <td><p>Eine Sequenz mit den Handlern, die den Request-Typen verarbeiten.</p>
 </td>
       </tr>
@@ -174,7 +198,7 @@ der einen bestimmten Request-Typen bedient.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;&gt;</td>
         <td><p>Den Handler, der die Requests verarbeiten soll.</p>
 </td>
       </tr>

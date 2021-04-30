@@ -81,11 +81,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">RequestOperations</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.html">Dataport.AppFrameDotNet.RequestResponsePattern</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class RequestOperations : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class RequestOperations</code></pre>
   </div>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>Alle Log-Meldungen innerhalb der Ausführung des Verbs haben den
@@ -160,7 +184,7 @@ Wenn kein Handler bekannt ist, wird kein Response zurückgegeben</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(IRequestBase)">CallDynamic(IRequestBase)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)">CallDynamic(IRequestBase)</h4>
   <div class="markdown level1 summary"><p>Request ausführen. Es werden 0-n Responses zurückgegeben.
 Responses können ungültig sein.
 Wenn kein Handler bekannt ist, wird kein Response zurückgegeben</p>
@@ -181,7 +205,7 @@ Wenn kein Handler bekannt ist, wird kein Response zurückgegeben</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">request</span></td>
         <td><p>Request, der ausgeführt werden soll.</p>
 </td>
@@ -198,13 +222,13 @@ Wenn kein Handler bekannt ist, wird kein Response zurückgegeben</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><p>Request nach der Ausführung (mit Ergebnis-Response).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_IRequestBase__remarks">Remarks</h5>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Untypisierte Variante, zu verwenden, wo sich RequestTyp erst zur Laufzeit ergibt.</p>
 </div>
   
@@ -290,7 +314,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(IRequestBase)">DoDynamic(IRequestBase)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)">DoDynamic(IRequestBase)</h4>
   <div class="markdown level1 summary"><p>Request ausführen. Bei einem Fehler (sowohl Validierung als auch interne Exception) Exception auslösen.
 Wenn ein Response zurückgegeben wird, ist er gültig.
 Vorbedingung: Es gibt nur einen bekannten Handler!</p>
@@ -311,7 +335,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">request</span></td>
         <td><p>Request, der ausgeführt werden soll.</p>
 </td>
@@ -328,13 +352,13 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><p>Request nach der Ausführung (mit Ergebnis-Response).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_IRequestBase__remarks">Remarks</h5>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Untypisierte Variante, zu verwenden, wo sich der RequestTyp erst zur Laufzeit ergibt.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -499,7 +523,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(IRequestBase)">EvaluateDynamic(IRequestBase)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)">EvaluateDynamic(IRequestBase)</h4>
   <div class="markdown level1 summary"><p>Durch den Handler prüfen lassen, ob sich der Request ausführen lassen würde.
 Vorbedingung: Es gibt nur einen bekannten Handler!</p>
 </div>
@@ -519,7 +543,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">request</span></td>
         <td><p>Request, der ausgeführt werden soll.</p>
 </td>
@@ -536,13 +560,13 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><p>Request nach der Ausführung (mit Ergebnis-Response).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_IRequestBase__remarks">Remarks</h5>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Untypisierte Variante, zu verwenden, wo sich RequestTyp erst zur Laufzeit ergibt.</p>
 </div>
   
@@ -612,7 +636,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(IRequestBase)">TryDynamic(IRequestBase)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)">TryDynamic(IRequestBase)</h4>
   <div class="markdown level1 summary"><p>Request ausführen. Bei einem Fehler (sowohl Validierung als auch interne Exception) Exception auslösen.
 Wenn ein Response zurückgegeben wird, ist er gültig.
 Vorbedingung: Es gibt nur einen bekannten Handler!</p>
@@ -633,7 +657,7 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">request</span></td>
         <td><p>Request, der ausgeführt werden soll.</p>
 </td>
@@ -650,13 +674,13 @@ Vorbedingung: Es gibt nur einen bekannten Handler!</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><p>Request nach der Ausführung (mit Ergebnis-Response).</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_IRequestBase__remarks">Remarks</h5>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Untypisierte Variante, zu verwenden, wo sich der RequestTyp erst zur Laufzeit ergibt.</p>
 </div>
   

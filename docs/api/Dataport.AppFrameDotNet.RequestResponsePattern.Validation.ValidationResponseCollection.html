@@ -81,11 +81,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">ValidationResponseCollection</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.html">Dataport.AppFrameDotNet.RequestResponsePattern.Validation</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ValidationResponseCollection : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class ValidationResponseCollection</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -137,7 +161,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Menge der ResponseMessages, die durch die Validierungen erzeugt wurden.</p>
 </td>
       </tr>
@@ -148,7 +172,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Add_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Add_IResponseMessage___" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(IResponseMessage[])">Add(IResponseMessage[])</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Add_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage___" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage[])">Add(IResponseMessage[])</h4>
   <div class="markdown level1 summary"><p>Fügt Validierungsergebnisse in Form von ResponseMessages hinzu.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -167,7 +191,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IResponseMessage</span>[]</td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>[]</td>
         <td><span class="parametername">responseMessages</span></td>
         <td><p>Durch Validierung entstandene ResponseMessages.</p>
 </td>
@@ -193,7 +217,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Remove_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Remove_Predicate_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(Predicate{IResponseMessage})">Remove(Predicate&lt;IResponseMessage&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Remove_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})">Remove(Predicate&lt;IResponseMessage&gt;)</h4>
   <div class="markdown level1 summary"><p>Entfernt Validierungsergebnisse, die die angegebene Bedingung erfüllen.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -212,7 +236,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Predicate</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><span class="parametername">match</span></td>
         <td><p>Bedingung, für die die Validierungsergebnisse entfernt werden sollen.</p>
 </td>
@@ -229,7 +253,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Die entfernten Validierungsergebnisse.</p>
 </td>
       </tr>

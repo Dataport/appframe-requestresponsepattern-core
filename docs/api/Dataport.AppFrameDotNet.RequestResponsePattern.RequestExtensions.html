@@ -81,18 +81,42 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">RequestExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.html">Dataport.AppFrameDotNet.RequestResponsePattern</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class RequestExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class RequestExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_IRequestBase_Predicate_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IRequestBase,Predicate{IResponseMessage})">ContainsMessage(IRequestBase, Predicate&lt;IResponseMessage&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})">ContainsMessage(IRequestBase, Predicate&lt;IResponseMessage&gt;)</h4>
   <div class="markdown level1 summary"><p>Prüft, ob im aktuellem Response eine Message vorhanden ist,
 die die angegebene Bedingung erfüllt.</p>
 </div>
@@ -112,13 +136,13 @@ die die angegebene Bedingung erfüllt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Request.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Predicate</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><span class="parametername">predicate</span></td>
         <td><p>Bedingung.</p>
 </td>
@@ -144,7 +168,7 @@ die die angegebene Bedingung erfüllt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_IResponseMessage_Predicate_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IResponseMessage,Predicate{IResponseMessage})">ContainsMessage(IResponseMessage, Predicate&lt;IResponseMessage&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})">ContainsMessage(IResponseMessage, Predicate&lt;IResponseMessage&gt;)</h4>
   <div class="markdown level1 summary"><p>Prüft, ob die Message oder eine der NestedMessages die angegebene Bedingung erfüllt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -163,13 +187,13 @@ die die angegebene Bedingung erfüllt.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IResponseMessage</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a></td>
         <td><span class="parametername">message</span></td>
         <td><p>Message.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Predicate</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Predicate</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><span class="parametername">predicate</span></td>
         <td><p>Bedingung.</p>
 </td>
@@ -195,7 +219,7 @@ die die angegebene Bedingung erfüllt.</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithSourceId_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithSourceId_IRequestBase_System_String_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(IRequestBase,System.String)">ContainsMessageWithSourceId(IRequestBase, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithSourceId_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_String_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)">ContainsMessageWithSourceId(IRequestBase, String)</h4>
   <div class="markdown level1 summary"><p>Prüft, ob im aktuellen Response eine Message mit der
 angegebenen SourceId vorhanden ist.</p>
 </div>
@@ -215,7 +239,7 @@ angegebenen SourceId vorhanden ist.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Request.</p>
 </td>
@@ -247,7 +271,7 @@ angegebenen SourceId vorhanden ist.</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithUserFriendlyCaption_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithUserFriendlyCaption_IRequestBase_System_String_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(IRequestBase,System.String)">ContainsMessageWithUserFriendlyCaption(IRequestBase, String)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithUserFriendlyCaption_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_String_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)">ContainsMessageWithUserFriendlyCaption(IRequestBase, String)</h4>
   <div class="markdown level1 summary"><p>Prüft, ob im aktuellem Response eine Message mit der
 angegebenen UserFriendlyCaption vorhanden ist.</p>
 </div>
@@ -267,7 +291,7 @@ angegebenen UserFriendlyCaption vorhanden ist.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IRequestBase</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html">IRequestBase</a></td>
         <td><span class="parametername">context</span></td>
         <td><p>Request.</p>
 </td>

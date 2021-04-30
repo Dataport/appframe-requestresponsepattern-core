@@ -24,13 +24,13 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler(Of TRequest, TResponse).ActionHandler()
   nameWithType: ActionHandler<TRequest, TResponse>.ActionHandler()
   nameWithType.vb: ActionHandler(Of TRequest, TResponse).ActionHandler()
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler`2.#ctor(Action{`0})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler`2.#ctor(System.Action{`0})
   name: ActionHandler(Action<TRequest>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler-2.html#Dataport_AppFrameDotNet_RequestResponsePattern_ActionHandler_2__ctor_Action__0__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler`2.#ctor(Action{`0})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler-2.html#Dataport_AppFrameDotNet_RequestResponsePattern_ActionHandler_2__ctor_System_Action__0__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler`2.#ctor(System.Action{`0})
   name.vb: ActionHandler(Action(Of TRequest))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler<TRequest, TResponse>.ActionHandler(Action<TRequest>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler(Of TRequest, TResponse).ActionHandler(Action(Of TRequest))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler<TRequest, TResponse>.ActionHandler(System.Action<TRequest>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler(Of TRequest, TResponse).ActionHandler(System.Action(Of TRequest))
   nameWithType: ActionHandler<TRequest, TResponse>.ActionHandler(Action<TRequest>)
   nameWithType.vb: ActionHandler(Of TRequest, TResponse).ActionHandler(Action(Of TRequest))
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler`2.#ctor*
@@ -677,13 +677,13 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessage
   nameWithType: ResponseBase.AddMessage
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name: AddMessages(IEnumerable<IResponseMessage>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.html#Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessages_System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.html#Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessages_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name.vb: AddMessages(IEnumerable(Of IResponseMessage))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(System.Collections.Generic.IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(System.Collections.Generic.IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage))
   nameWithType: ResponseBase.AddMessages(IEnumerable<IResponseMessage>)
   nameWithType.vb: ResponseBase.AddMessages(IEnumerable(Of IResponseMessage))
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages*
@@ -1148,22 +1148,22 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler(Of TRequest).ActionHandler()
   nameWithType: ActionHandler<TRequest>.ActionHandler()
   nameWithType.vb: ActionHandler(Of TRequest).ActionHandler()
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(Action{`0,Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(System.Action{`0,Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext})
   name: ActionHandler(Action<TRequest, RequestContext>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.html#Dataport_AppFrameDotNet_RequestResponsePattern_Core_ActionHandler_1__ctor_Action__0_Dataport_AppFrameDotNet_RequestResponsePattern_Core_RequestContext__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(Action{`0,Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.html#Dataport_AppFrameDotNet_RequestResponsePattern_Core_ActionHandler_1__ctor_System_Action__0_Dataport_AppFrameDotNet_RequestResponsePattern_Core_RequestContext__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(System.Action{`0,Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext})
   name.vb: ActionHandler(Action(Of TRequest, RequestContext))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler<TRequest>.ActionHandler(Action<TRequest, Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler(Of TRequest).ActionHandler(Action(Of TRequest, Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler<TRequest>.ActionHandler(System.Action<TRequest, Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler(Of TRequest).ActionHandler(System.Action(Of TRequest, Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext))
   nameWithType: ActionHandler<TRequest>.ActionHandler(Action<TRequest, RequestContext>)
   nameWithType.vb: ActionHandler(Of TRequest).ActionHandler(Action(Of TRequest, RequestContext))
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(Action{`0})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(System.Action{`0})
   name: ActionHandler(Action<TRequest>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.html#Dataport_AppFrameDotNet_RequestResponsePattern_Core_ActionHandler_1__ctor_Action__0__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(Action{`0})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.html#Dataport_AppFrameDotNet_RequestResponsePattern_Core_ActionHandler_1__ctor_System_Action__0__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor(System.Action{`0})
   name.vb: ActionHandler(Action(Of TRequest))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler<TRequest>.ActionHandler(Action<TRequest>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler(Of TRequest).ActionHandler(Action(Of TRequest))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler<TRequest>.ActionHandler(System.Action<TRequest>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler(Of TRequest).ActionHandler(System.Action(Of TRequest))
   nameWithType: ActionHandler<TRequest>.ActionHandler(Action<TRequest>)
   nameWithType.vb: ActionHandler(Of TRequest).ActionHandler(Action(Of TRequest))
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler`1.#ctor*
@@ -1894,12 +1894,12 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase(Of TRequest, TResponse).OnEnter
   nameWithType: HandlerBase<TRequest, TResponse>.OnEnter
   nameWithType.vb: HandlerBase(Of TRequest, TResponse).OnEnter
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,Exception,ResponseMessage)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,System.Exception,Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage)
   name: OnError(TRequest, Exception, ResponseMessage)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase-2.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError__0_Exception_ResponseMessage_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,Exception,ResponseMessage)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase<TRequest, TResponse>.OnError(TRequest, Exception, ResponseMessage)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase(Of TRequest, TResponse).OnError(TRequest, Exception, ResponseMessage)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase-2.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError__0_System_Exception_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseMessage_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,System.Exception,Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase<TRequest, TResponse>.OnError(TRequest, System.Exception, Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase(Of TRequest, TResponse).OnError(TRequest, System.Exception, Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage)
   nameWithType: HandlerBase<TRequest, TResponse>.OnError(TRequest, Exception, ResponseMessage)
   nameWithType.vb: HandlerBase(Of TRequest, TResponse).OnError(TRequest, Exception, ResponseMessage)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError*
@@ -2224,17 +2224,34 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.RemoveListener(Of TRequest)(Dataport.AppFrameDotNet.RequestResponsePattern.IHandler(Of TRequest))
   nameWithType: RuntimeListeners.RemoveListener<TRequest>(IHandler<TRequest>)
   nameWithType.vb: RuntimeListeners.RemoveListener(Of TRequest)(IHandler(Of TRequest))
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System#IDisposable#Dispose
+  name: IDisposable.Dispose()
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_System_IDisposable_Dispose
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System#IDisposable#Dispose
+  name.vb: System.IDisposable.Dispose()
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System.IDisposable.Dispose()
+  nameWithType: RuntimeListeners.IDisposable.Dispose()
+  nameWithType.vb: RuntimeListeners.System.IDisposable.Dispose()
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System#IDisposable#Dispose*
+  name: IDisposable.Dispose
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_System_IDisposable_Dispose_
+  commentId: Overload:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System#IDisposable#Dispose
+  isSpec: "True"
+  name.vb: System.IDisposable.Dispose
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.System.IDisposable.Dispose
+  nameWithType: RuntimeListeners.IDisposable.Dispose
+  nameWithType.vb: RuntimeListeners.System.IDisposable.Dispose
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider
   name: ServiceProviderHandlerProvider
   href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.html
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider
   nameWithType: ServiceProviderHandlerProvider
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(IServiceProvider)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(System.IServiceProvider)
   name: ServiceProviderHandlerProvider(IServiceProvider)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider__ctor_IServiceProvider_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(IServiceProvider)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.ServiceProviderHandlerProvider(IServiceProvider)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.html#Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_ServiceProviderHandlerProvider__ctor_System_IServiceProvider_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor(System.IServiceProvider)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.ServiceProviderHandlerProvider(System.IServiceProvider)
   nameWithType: ServiceProviderHandlerProvider.ServiceProviderHandlerProvider(IServiceProvider)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.#ctor*
   name: ServiceProviderHandlerProvider
@@ -2392,22 +2409,22 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog
   nameWithType: MessageLoggingExtensions.WriteToLog
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(``0,ILogger)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(``0,Microsoft.Extensions.Logging.ILogger)
   name: WriteToLog<T>(T, ILogger)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_Logging_MessageLoggingExtensions_WriteToLog__1___0_ILogger_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(``0,ILogger)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_Logging_MessageLoggingExtensions_WriteToLog__1___0_Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(``0,Microsoft.Extensions.Logging.ILogger)
   name.vb: WriteToLog(Of T)(T, ILogger)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog<T>(T, ILogger)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog(Of T)(T, ILogger)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog<T>(T, Microsoft.Extensions.Logging.ILogger)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog(Of T)(T, Microsoft.Extensions.Logging.ILogger)
   nameWithType: MessageLoggingExtensions.WriteToLog<T>(T, ILogger)
   nameWithType.vb: MessageLoggingExtensions.WriteToLog(Of T)(T, ILogger)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(IList{``0},ILogger)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(System.Collections.Generic.IList{``0},Microsoft.Extensions.Logging.ILogger)
   name: WriteToLog<T>(IList<T>, ILogger)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_Logging_MessageLoggingExtensions_WriteToLog__1_IList___0__ILogger_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(IList{``0},ILogger)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_Logging_MessageLoggingExtensions_WriteToLog__1_System_Collections_Generic_IList___0__Microsoft_Extensions_Logging_ILogger_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog``1(System.Collections.Generic.IList{``0},Microsoft.Extensions.Logging.ILogger)
   name.vb: WriteToLog(Of T)(IList(Of T), ILogger)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog<T>(IList<T>, ILogger)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog(Of T)(IList(Of T), ILogger)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog<T>(System.Collections.Generic.IList<T>, Microsoft.Extensions.Logging.ILogger)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.WriteToLog(Of T)(System.Collections.Generic.IList(Of T), Microsoft.Extensions.Logging.ILogger)
   nameWithType: MessageLoggingExtensions.WriteToLog<T>(IList<T>, ILogger)
   nameWithType.vb: MessageLoggingExtensions.WriteToLog(Of T)(IList(Of T), ILogger)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions
@@ -2416,18 +2433,18 @@ references:
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions
   nameWithType: MessageFactoryExtensions
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Exception)
-  name: AsResponseMessage(Exception)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_MessageFactoryExtensions_AsResponseMessage_Exception_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Exception)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Exception)
-  nameWithType: MessageFactoryExtensions.AsResponseMessage(Exception)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(IResponse,System.String,System.String,System.String)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse,System.String,System.String,System.String)
   name: AsResponseMessage(IResponse, String, String, String)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_MessageFactoryExtensions_AsResponseMessage_IResponse_System_String_System_String_System_String_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(IResponse,System.String,System.String,System.String)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(IResponse, System.String, System.String, System.String)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_MessageFactoryExtensions_AsResponseMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_System_String_System_String_System_String_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse,System.String,System.String,System.String)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse, System.String, System.String, System.String)
   nameWithType: MessageFactoryExtensions.AsResponseMessage(IResponse, String, String, String)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(System.Exception)
+  name: AsResponseMessage(Exception)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_MessageFactoryExtensions_AsResponseMessage_System_Exception_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(System.Exception)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage(System.Exception)
+  nameWithType: MessageFactoryExtensions.AsResponseMessage(Exception)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.AsResponseMessage*
   name: AsResponseMessage
   href: api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_MessageFactoryExtensions_AsResponseMessage_
@@ -2534,22 +2551,22 @@ references:
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions
   nameWithType: RequestExtensions
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IRequestBase,Predicate{IResponseMessage})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name: ContainsMessage(IRequestBase, Predicate<IResponseMessage>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_IRequestBase_Predicate_IResponseMessage__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IRequestBase,Predicate{IResponseMessage})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name.vb: ContainsMessage(IRequestBase, Predicate(Of IResponseMessage))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IRequestBase, Predicate<IResponseMessage>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IRequestBase, Predicate(Of IResponseMessage))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase, System.Predicate<Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase, System.Predicate(Of Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage))
   nameWithType: RequestExtensions.ContainsMessage(IRequestBase, Predicate<IResponseMessage>)
   nameWithType.vb: RequestExtensions.ContainsMessage(IRequestBase, Predicate(Of IResponseMessage))
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IResponseMessage,Predicate{IResponseMessage})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name: ContainsMessage(IResponseMessage, Predicate<IResponseMessage>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_IResponseMessage_Predicate_IResponseMessage__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IResponseMessage,Predicate{IResponseMessage})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage,System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name.vb: ContainsMessage(IResponseMessage, Predicate(Of IResponseMessage))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IResponseMessage, Predicate<IResponseMessage>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(IResponseMessage, Predicate(Of IResponseMessage))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage, System.Predicate<Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage, System.Predicate(Of Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage))
   nameWithType: RequestExtensions.ContainsMessage(IResponseMessage, Predicate<IResponseMessage>)
   nameWithType.vb: RequestExtensions.ContainsMessage(IResponseMessage, Predicate(Of IResponseMessage))
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage*
@@ -2559,11 +2576,11 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessage
   nameWithType: RequestExtensions.ContainsMessage
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(IRequestBase,System.String)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)
   name: ContainsMessageWithSourceId(IRequestBase, String)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithSourceId_IRequestBase_System_String_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(IRequestBase,System.String)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(IRequestBase, System.String)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithSourceId_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_String_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase, System.String)
   nameWithType: RequestExtensions.ContainsMessageWithSourceId(IRequestBase, String)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId*
   name: ContainsMessageWithSourceId
@@ -2572,11 +2589,11 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithSourceId
   nameWithType: RequestExtensions.ContainsMessageWithSourceId
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(IRequestBase,System.String)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)
   name: ContainsMessageWithUserFriendlyCaption(IRequestBase, String)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithUserFriendlyCaption_IRequestBase_System_String_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(IRequestBase,System.String)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(IRequestBase, System.String)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestExtensions_ContainsMessageWithUserFriendlyCaption_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_System_String_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase,System.String)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase, System.String)
   nameWithType: RequestExtensions.ContainsMessageWithUserFriendlyCaption(IRequestBase, String)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.ContainsMessageWithUserFriendlyCaption*
   name: ContainsMessageWithUserFriendlyCaption
@@ -2607,11 +2624,11 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.Call(Of TRequest)(TRequest)
   nameWithType: RequestOperations.Call<TRequest>(TRequest)
   nameWithType.vb: RequestOperations.Call(Of TRequest)(TRequest)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(IRequestBase)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   name: CallDynamic(IRequestBase)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_IRequestBase_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(IRequestBase)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(IRequestBase)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_CallDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   nameWithType: RequestOperations.CallDynamic(IRequestBase)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.CallDynamic*
   name: CallDynamic
@@ -2636,11 +2653,11 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.Do(Of TRequest)(TRequest)
   nameWithType: RequestOperations.Do<TRequest>(TRequest)
   nameWithType.vb: RequestOperations.Do(Of TRequest)(TRequest)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(IRequestBase)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   name: DoDynamic(IRequestBase)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_IRequestBase_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(IRequestBase)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(IRequestBase)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_DoDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   nameWithType: RequestOperations.DoDynamic(IRequestBase)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.DoDynamic*
   name: DoDynamic
@@ -2681,11 +2698,11 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.Evaluate(Of TRequest)(TRequest)
   nameWithType: RequestOperations.Evaluate<TRequest>(TRequest)
   nameWithType.vb: RequestOperations.Evaluate(Of TRequest)(TRequest)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(IRequestBase)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   name: EvaluateDynamic(IRequestBase)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_IRequestBase_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(IRequestBase)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(IRequestBase)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_EvaluateDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   nameWithType: RequestOperations.EvaluateDynamic(IRequestBase)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.EvaluateDynamic*
   name: EvaluateDynamic
@@ -2710,11 +2727,11 @@ references:
   fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.Try(Of TRequest)(TRequest)
   nameWithType: RequestOperations.Try<TRequest>(TRequest)
   nameWithType.vb: RequestOperations.Try(Of TRequest)(TRequest)
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(IRequestBase)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   name: TryDynamic(IRequestBase)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_IRequestBase_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(IRequestBase)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(IRequestBase)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html#Dataport_AppFrameDotNet_RequestResponsePattern_RequestOperations_TryDynamic_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IRequestBase_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase)
   nameWithType: RequestOperations.TryDynamic(IRequestBase)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.TryDynamic*
   name: TryDynamic
@@ -2745,11 +2762,11 @@ references:
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions
   nameWithType: ResponseExtensions
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(IResponse,ResponseBase,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse,Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
   name: ApplyAsNestedResponseOf(IResponse, ResponseBase, String, String, String, String, Boolean, Boolean)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_ResponseExtensions_ApplyAsNestedResponseOf_IResponse_ResponseBase_System_String_System_String_System_String_System_String_System_Boolean_System_Boolean_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(IResponse,ResponseBase,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(IResponse, ResponseBase, System.String, System.String, System.String, System.String, System.Boolean, System.Boolean)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_ResponseExtensions_ApplyAsNestedResponseOf_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_System_String_System_String_System_String_System_String_System_Boolean_System_Boolean_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse,Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse, Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase, System.String, System.String, System.String, System.String, System.Boolean, System.Boolean)
   nameWithType: ResponseExtensions.ApplyAsNestedResponseOf(IResponse, ResponseBase, String, String, String, String, Boolean, Boolean)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.ApplyAsNestedResponseOf*
   name: ApplyAsNestedResponseOf
@@ -2770,29 +2787,29 @@ references:
   commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime()
   nameWithType: Runtime.Runtime()
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
   name: Runtime(ILoggerFactory, IValidator, IHandlerProvider[])
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider___
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider___
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
   name.vb: Runtime(ILoggerFactory, IValidator, IHandlerProvider())
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider())
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(Microsoft.Extensions.Logging.ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(Microsoft.Extensions.Logging.ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider())
   nameWithType: Runtime.Runtime(ILoggerFactory, IValidator, IHandlerProvider[])
   nameWithType.vb: Runtime.Runtime(ILoggerFactory, IValidator, IHandlerProvider())
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})
   name: Runtime(ILoggerFactory, IValidator, IEnumerable<IActionDefinitionSource>, IEnumerable<IHandlerProvider>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Core_IActionDefinitionSource__IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Core_IActionDefinitionSource__System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})
   name.vb: Runtime(ILoggerFactory, IValidator, IEnumerable(Of IActionDefinitionSource), IEnumerable(Of IHandlerProvider))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource>, IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource), IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(Microsoft.Extensions.Logging.ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, System.Collections.Generic.IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource>, System.Collections.Generic.IEnumerable<Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(Microsoft.Extensions.Logging.ILoggerFactory, Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator, System.Collections.Generic.IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource), System.Collections.Generic.IEnumerable(Of Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider))
   nameWithType: Runtime.Runtime(ILoggerFactory, IValidator, IEnumerable<IActionDefinitionSource>, IEnumerable<IHandlerProvider>)
   nameWithType.vb: Runtime.Runtime(ILoggerFactory, IValidator, IEnumerable(Of IActionDefinitionSource), IEnumerable(Of IHandlerProvider))
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(IServiceProvider)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(System.IServiceProvider)
   name: Runtime(IServiceProvider)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_IServiceProvider_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(IServiceProvider)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(IServiceProvider)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html#Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_System_IServiceProvider_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(System.IServiceProvider)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.Runtime(System.IServiceProvider)
   nameWithType: Runtime.Runtime(IServiceProvider)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor*
   name: Runtime
@@ -2872,11 +2889,11 @@ references:
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions
   nameWithType: RuntimeExtensions
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(IServiceProvider)
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(System.IServiceProvider)
   name: CreateRequestResponsePatternRuntime(IServiceProvider)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RuntimeExtensions_CreateRequestResponsePatternRuntime_IServiceProvider_
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(IServiceProvider)
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(IServiceProvider)
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.html#Dataport_AppFrameDotNet_RequestResponsePattern_RuntimeExtensions_CreateRequestResponsePatternRuntime_System_IServiceProvider_
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(System.IServiceProvider)
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime(System.IServiceProvider)
   nameWithType: RuntimeExtensions.CreateRequestResponsePatternRuntime(IServiceProvider)
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.CreateRequestResponsePatternRuntime*
   name: CreateRequestResponsePatternRuntime
@@ -2930,6 +2947,23 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.State.SelfValidation
   nameWithType: State.SelfValidation
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.State.System#IDisposable#Dispose
+  name: IDisposable.Dispose()
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.State.html#Dataport_AppFrameDotNet_RequestResponsePattern_State_System_IDisposable_Dispose
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.State.System#IDisposable#Dispose
+  name.vb: System.IDisposable.Dispose()
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.State.System.IDisposable.Dispose()
+  nameWithType: State.IDisposable.Dispose()
+  nameWithType.vb: State.System.IDisposable.Dispose()
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.State.System#IDisposable#Dispose*
+  name: IDisposable.Dispose
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.State.html#Dataport_AppFrameDotNet_RequestResponsePattern_State_System_IDisposable_Dispose_
+  commentId: Overload:Dataport.AppFrameDotNet.RequestResponsePattern.State.System#IDisposable#Dispose
+  isSpec: "True"
+  name.vb: System.IDisposable.Dispose
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.State.System.IDisposable.Dispose
+  nameWithType: State.IDisposable.Dispose
+  nameWithType.vb: State.System.IDisposable.Dispose
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation
   name: Dataport.AppFrameDotNet.RequestResponsePattern.Validation
   href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.html
@@ -3034,13 +3068,13 @@ references:
   commentId: T:Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection
   nameWithType: ValidationResponseCollection
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(IResponseMessage[])
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage[])
   name: Add(IResponseMessage[])
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.html#Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Add_IResponseMessage___
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(IResponseMessage[])
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.html#Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Add_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage___
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage[])
   name.vb: Add(IResponseMessage())
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(IResponseMessage[])
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(IResponseMessage())
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage[])
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage())
   nameWithType: ValidationResponseCollection.Add(IResponseMessage[])
   nameWithType.vb: ValidationResponseCollection.Add(IResponseMessage())
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Add*
@@ -3063,13 +3097,13 @@ references:
   isSpec: "True"
   fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.IsValid
   nameWithType: ValidationResponseCollection.IsValid
-- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(Predicate{IResponseMessage})
+- uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name: Remove(Predicate<IResponseMessage>)
-  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.html#Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Remove_Predicate_IResponseMessage__
-  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(Predicate{IResponseMessage})
+  href: api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.html#Dataport_AppFrameDotNet_RequestResponsePattern_Validation_ValidationResponseCollection_Remove_System_Predicate_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__
+  commentId: M:Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(System.Predicate{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})
   name.vb: Remove(Predicate(Of IResponseMessage))
-  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(Predicate<IResponseMessage>)
-  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(Predicate(Of IResponseMessage))
+  fullName: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(System.Predicate<Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage>)
+  fullName.vb: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove(System.Predicate(Of Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage))
   nameWithType: ValidationResponseCollection.Remove(Predicate<IResponseMessage>)
   nameWithType.vb: ValidationResponseCollection.Remove(Predicate(Of IResponseMessage))
 - uid: Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.Remove*

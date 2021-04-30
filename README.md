@@ -29,7 +29,7 @@ Dieses Repository enthält den gesamten Quellcode sowie die Entwicklungsdokument
 
 ### Lizenz
 
-Das Projekt ist unter der MIT-Lizenz lizenziert. Nähere Informationen dazu findet ihr hier: [Lizenzinformationen](https://github.com/Dataport/appframe-dotnettools/blob/main/LICENCE). TODO: Link
+Das Projekt ist unter der MIT-Lizenz lizenziert. Nähere Informationen dazu findet ihr hier: [Lizenzinformationen](https://github.com/Dataport/appframe-requestresponsepattern-core/blob/main/LICENCE).
 
 ### Community und Contribution
 

@@ -81,11 +81,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Runtime</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.html">Dataport.AppFrameDotNet.RequestResponsePattern</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Runtime : object</code></pre>
+    <pre><code class="lang-csharp hljs">public class Runtime</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -103,7 +127,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider___" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])">Runtime(ILoggerFactory, IValidator, IHandlerProvider[])</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider___" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider[])">Runtime(ILoggerFactory, IValidator, IHandlerProvider[])</h4>
   <div class="markdown level1 summary"><p>Konstruktor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -122,7 +146,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
         <td><p>Logger Factory (optional)</p>
 </td>
@@ -144,7 +168,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Core_IActionDefinitionSource__IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})">Runtime(ILoggerFactory, IValidator, IEnumerable&lt;IActionDefinitionSource&gt;, IEnumerable&lt;IHandlerProvider&gt;)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_Microsoft_Extensions_Logging_ILoggerFactory_Dataport_AppFrameDotNet_RequestResponsePattern_Validation_IValidator_System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Core_IActionDefinitionSource__System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(Microsoft.Extensions.Logging.ILoggerFactory,Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator,System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource},System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider})">Runtime(ILoggerFactory, IValidator, IEnumerable&lt;IActionDefinitionSource&gt;, IEnumerable&lt;IHandlerProvider&gt;)</h4>
   <div class="markdown level1 summary"><p>Konstruktor.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -163,7 +187,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILoggerFactory</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
         <td><span class="parametername">loggerFactory</span></td>
         <td><p>Logger Factory (optional)</p>
 </td>
@@ -175,13 +199,13 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.html">IActionDefinitionSource</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.html">IActionDefinitionSource</a>&gt;</td>
         <td><span class="parametername">globalActionDefinitionSources</span></td>
         <td><p>Globale &quot;Plugins&quot; die ALLEN Core-Handlern Aktionen hinzufügen. (Neue Implementierung)</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a>&gt;</td>
         <td><span class="parametername">handlerProviders</span></td>
         <td><p>Zusätzliche HandlerProvider (z.B. aus dem WebApiClient-Paket)</p>
 </td>
@@ -191,7 +215,7 @@
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_IServiceProvider_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(IServiceProvider)">Runtime(IServiceProvider)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Runtime__ctor_System_IServiceProvider_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.#ctor(System.IServiceProvider)">Runtime(IServiceProvider)</h4>
   <div class="markdown level1 summary"><p>Konstruktor (Abhängigkeiten werden via IServiceProvider aufgelöst).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -210,7 +234,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IServiceProvider</span></td>
+        <td><span class="xref">System.IServiceProvider</span></td>
         <td><span class="parametername">serviceProvider</span></td>
         <td><p>ServiceProvider (z.B. host.Services in DotNetCore WebApi)</p>
 </td>
@@ -267,7 +291,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.html">IActionDefinitionSource</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.html">IActionDefinitionSource</a>&gt;</td>
         <td><p>Globale &quot;Plugins&quot; die ALLEN Core-Handlern Aktionen hinzufügen.</p>
 </td>
       </tr>

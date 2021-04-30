@@ -86,11 +86,35 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;</div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.html">Dataport.AppFrameDotNet.RequestResponsePattern</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class HandlerBase&lt;TRequest, TResponse&gt; : object, IHandler&lt;TRequest&gt; where TRequest : RequestBase&lt;TResponse&gt;, IRequestBase, IRequest&lt;TResponse&gt; where TResponse : ResponseBase, new()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class HandlerBase&lt;TRequest, TResponse&gt; : IHandler&lt;TRequest&gt; where TRequest : RequestBase&lt;TResponse&gt;, IRequestBase, IRequest&lt;TResponse&gt; where TResponse : ResponseBase, new()</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -166,7 +190,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ILogger</span></td>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span></td>
         <td><p>Logger-Instanz</p>
 </td>
       </tr>
@@ -194,7 +218,7 @@ festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Validierungsmeldungen, die in der aktuellen Ausführung festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
 </td>
       </tr>
@@ -354,7 +378,7 @@ festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Validierungsmeldungen; oder eine leere Sequenz, wenn es keine Validierungsfehler gab.</p>
 </td>
       </tr>
@@ -399,7 +423,7 @@ festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Validierungsmeldungen; oder eine leere Sequenz, wenn es keine Validierungsfehler gab.</p>
 </td>
       </tr>
@@ -445,7 +469,7 @@ die vom Anwender unterdrückt werden können.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Eine Sequenz mit den Source IDs der unterdrückbaren Validierungsmeldungen.</p>
 </td>
       </tr>
@@ -524,7 +548,7 @@ Business Logik zu implementieren.</p>
   
   
   <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError*"></a>
-  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError__0_Exception_ResponseMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,Exception,ResponseMessage)">OnError(TRequest, Exception, ResponseMessage)</h4>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError__0_System_Exception_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,System.Exception,Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage)">OnError(TRequest, Exception, ResponseMessage)</h4>
   <div class="markdown level1 summary"><p>Wird im ErrorHandler ausgeführt.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -549,13 +573,13 @@ Business Logik zu implementieren.</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">Exception</span></td>
+        <td><span class="xref">System.Exception</span></td>
         <td><span class="parametername">ex</span></td>
         <td><p>Ausgelöste Exception</p>
 </td>
       </tr>
       <tr>
-        <td><span class="xref">ResponseMessage</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage.html">ResponseMessage</a></td>
         <td><span class="parametername">errorMessage</span></td>
         <td><p>Erstellte Message zur Exception</p>
 </td>

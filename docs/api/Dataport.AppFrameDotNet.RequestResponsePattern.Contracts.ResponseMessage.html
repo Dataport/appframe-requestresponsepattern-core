@@ -85,35 +85,11 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.html">Dataport.AppFrameDotNet.RequestResponsePattern.Contracts</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseMessage_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ResponseMessage : IResponseMessage</code></pre>
+    <pre><code class="lang-csharp hljs">public class ResponseMessage : object, IResponseMessage</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -186,7 +162,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Aufzählung von Kategorien</p>
 </td>
       </tr>
@@ -268,7 +244,7 @@ Standardwert ist &quot;Informational&quot;.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Diagnostics.Tracing.EventLevel</span></td>
+        <td><span class="xref">EventLevel</span></td>
         <td><p>Einstufung der Message</p>
 </td>
       </tr>
@@ -323,7 +299,7 @@ vom Anwender unterdrückt werden kann.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
         <td><p>Aufzählung von untergeordneten Meldungen</p>
 </td>
       </tr>

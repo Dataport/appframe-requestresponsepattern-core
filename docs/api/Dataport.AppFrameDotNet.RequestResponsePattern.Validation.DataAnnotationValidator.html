@@ -85,11 +85,35 @@
     <h5>Implements</h5>
     <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator.html">IValidator</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Validation.html">Dataport.AppFrameDotNet.RequestResponsePattern.Validation</a></h6>
   <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
   <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Validation_DataAnnotationValidator_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class DataAnnotationValidator : object, IValidator</code></pre>
+    <pre><code class="lang-csharp hljs">public class DataAnnotationValidator : IValidator</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -114,7 +138,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">EventLevel</span></td>
+        <td><span class="xref">System.Diagnostics.Tracing.EventLevel</span></td>
         <td><p>EventLevel, der in ResponseMessages gesetzt werden soll, die durch Validierung entstehen.</p>
 </td>
       </tr>
@@ -188,7 +212,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IResponseMessage</span></td>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a></td>
         <td><p>Null, falls Objekt gültig ist; ansonsten eine Message mit den Validierungsmeldungen.</p>
 </td>
       </tr>
