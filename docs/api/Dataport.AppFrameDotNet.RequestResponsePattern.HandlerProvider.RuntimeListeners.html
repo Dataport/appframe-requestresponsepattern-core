@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RuntimeListeners
+   | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RuntimeListeners
+   | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners">
+  
+  
+  <h1 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners" class="text-break">Class RuntimeListeners
+  </h1>
+  <div class="markdown level0 summary"><p>Zur Laufzeit registrierte Handler, die einen bestimmten Request behandeln sollen.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RuntimeListeners</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a></div>
+    <div><span class="xref">IDisposable</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.html">Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider</a></h6>
+  <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RuntimeListeners : object, IHandlerProvider, IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Global_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Global*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Global" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Global">Global</h4>
+  <div class="markdown level1 summary"><p>Zur Laufzeit zu verwendendes Singleton für global bereitgestellte Instanzen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RuntimeListeners Global { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.html">RuntimeListeners</a></td>
+        <td><p>Zur Laufzeit zu verwendendes Singleton für global bereitgestellte Instanzen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_AddListener_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.AddListener*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_AddListener__1_Dataport_AppFrameDotNet_RequestResponsePattern_IHandler___0__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.AddListener``1(Dataport.AppFrameDotNet.RequestResponsePattern.IHandler{``0})">AddListener&lt;TRequest&gt;(IHandler&lt;TRequest&gt;)</h4>
+  <div class="markdown level1 summary"><p>Handler als Listener zufügen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddListener&lt;TRequest&gt;(IHandler&lt;TRequest&gt; handler)
+    where TRequest : IRequestBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Handler, der hinzugefügt werden soll.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td><p>Typ des Requests, der durch den Handler verarbeitet werden soll.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_ClearListeners_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.ClearListeners*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_ClearListeners" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.ClearListeners">ClearListeners()</h4>
+  <div class="markdown level1 summary"><p>Alle Listener löschen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearListeners()</code></pre>
+  </div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_CreateLocalSet_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.CreateLocalSet*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_CreateLocalSet" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.CreateLocalSet">CreateLocalSet()</h4>
+  <div class="markdown level1 summary"><p>Per Using-Direktive zu verwendendes lokales - sprich thread-spezifisches(!) - Set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RuntimeListeners CreateLocalSet()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.html">RuntimeListeners</a></td>
+        <td><p>Das Set, in dem weitere Handler innerhalb eines using-Blocks ergänzt werden können.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Dispose_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Dispose*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Dispose_System_Boolean_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Intern: Per Using-Direktive bereitgestellte Auflistung entfernen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>True, falls Dispose explizit aufgerufen wird; false im Rahmen eines Destruktor-Aufrufs.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Finalize_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Finalize*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Finalize" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>Destruktor zum automatischen Aufräumen von Ressourcen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_RemoveListener_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.RemoveListener*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_RemoveListener__1_Dataport_AppFrameDotNet_RequestResponsePattern_IHandler___0__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.RemoveListener``1(Dataport.AppFrameDotNet.RequestResponsePattern.IHandler{``0})">RemoveListener&lt;TRequest&gt;(IHandler&lt;TRequest&gt;)</h4>
+  <div class="markdown level1 summary"><p>Handler als Listener entfernen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveListener&lt;TRequest&gt;(IHandler&lt;TRequest&gt; handler)
+    where TRequest : IRequestBase</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td><p>Handler, der die Requests nicht weiter verarbeiten soll.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td><p>Typ des Requests, der durch den Handler verarbeitet wird.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider_GetHandler_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Dataport#AppFrameDotNet#RequestResponsePattern#HandlerProvider#IHandlerProvider#GetHandler*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_RuntimeListeners_Dataport_AppFrameDotNet_RequestResponsePattern_HandlerProvider_IHandlerProvider_GetHandler__1" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.Dataport#AppFrameDotNet#RequestResponsePattern#HandlerProvider#IHandlerProvider#GetHandler``1">IHandlerProvider.GetHandler&lt;TRequest&gt;()</h4>
+  <div class="markdown level1 summary"><p>'0' bis 'n' Handler bereitstellen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IHandler&lt;TRequest&gt;&gt; IHandlerProvider.GetHandler&lt;TRequest&gt;()
+    where TRequest : IRequestBase</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;&gt;</td>
+        <td><p>Eine Sequenz mit den Handlern, die den Request-Typen verarbeiten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td><p>Typ des Requests, der durch die Handler verarbeitet wird.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html">IHandlerProvider</a>
+  </div>
+  <div>
+      <span class="xref">IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

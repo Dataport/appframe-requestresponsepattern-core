@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Entwurfsmuster | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Entwurfsmuster | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="entwurfsmuster">Entwurfsmuster</h1>
+
+<h2 id="design-by-contract">Design by Contract</h2>
+<p>&quot;Das reibungslose Zusammenspiel der Programmmodule wird durch einen „Vertrag“ erreicht, der beispielsweise bei der Verwendung einer Methode einzuhalten ist. Dieser besteht aus
+Vorbedingungen (englisch preconditions), also den Zusicherungen, die der Aufrufer einzuhalten hat
+Nachbedingungen (englisch postconditions), also den Zusicherungen, die der Aufgerufene einhalten wird, sowie den
+Invarianten (englisch class invariants), quasi dem Gesundheitszustand einer Klasse.&quot;
+-- <a href="https://de.wikipedia.org/wiki/Design_by_contract">https://de.wikipedia.org/wiki/Design_by_contract</a></p>
+<p>Die Validierungsregeln des Request stellen die Vorbedingungen dar, die des Response die Nachbedingungen. Im Handler wird zusätzlich der interne State validiert (Invarianten).</p>
+<p>Vorteile:</p>
+<ul>
+<li><p>Bei verteilter Entwicklung oder Wiederverwendung von Logik (Handlern) weiß der Konsument welche Vorbedingen er einhalten muss und auf welche Rückgaben er sich verlassen kann. Dies verhindert Laufzeitfehler und andere Überraschungen.</p>
+</li>
+<li><p>Sobald der Request und Response (der Kontrakt) definiert ist, kann der Konsument dessen Verwendung implementieren und ist nicht davon abhängig, dass die tatsächliche Implementierung bereits erfolgt ist.</p>
+</li>
+<li><p>Bei Refactorings in der Implementierung des Handlers garantiert der Kontrakt (dessen Einhaltung mit Unittests geprüft sein sollte), dass sich Verhalten nach außen nicht unbeabsichtigt ändert.</p>
+</li>
+</ul>
+<h2 id="aspektorientierte-programmierung">Aspektorientierte Programmierung</h2>
+<p>Bei der aspektorientierten Programmierung geht es darum Cross Cutting Concerns (wie z.B. Autorisierung) aus der Implementierung der fachlichen Funktionalität möglichst raus zu halten.</p>
+<p>Im Request-Response-Framework können Cross Cutting Concerns als Plugins bzw. AddIns implementiert werden, die auf die Handler angewendet werden (in der Regel durch Attribute an der Klasse).</p>
+<p>Vorteile:</p>
+<ul>
+<li><p>Die Implementierung des Aspekts erfolgt im Plugin, so entsteht weniger Boiler-Plate-Code.</p>
+</li>
+<li><p>Die Implementierung des Aspekts ist dadurch gekapselt, kann also leicht ausgetauscht werden, ohne die Logik refaktorisieren zu müssen. Weitere Aspekte können als Plugins bzw. AddIns über Attribute an den Handler angefügt werden, ohne dass dessen Implementierung verändert werden muss (Einhaltung des Open-Closed Principle).</p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Einleitung | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Einleitung | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="einleitung">Einleitung</h1>
+
+<h2 id="management-summary">Management Summary</h2>
+<p>Das Request-Response-Pattern bietet ein Framework für ein Entwurfsmuster um Business Logic mit dem Ziel zu implementieren, diese vom Konsumenten zu entkoppeln, mit einem klaren Kontrakt auszustatten und möglichst leicht um Cross-Cutting-Concerns (Aspekte) ergänzen zu können.</p>
+<p>Das Pattern führt zu folgendem Ablauf, wenn der Konsument (z.B. Client) einen Dienst verwendet:</p>
+<ul>
+<li><p>Der Konsument erstellt ein Request, der auf Basis von Validierungsregeln beschreibt welche Vorbedingungen erfüllt sein müssen damit die Funktion ausgeführt werden kann.</p>
+</li>
+<li><p>Der Konsument übergibt den Request über ein Verb (Do, Try, Call) an das Framework, das Verb bestimmt die Modalitäten der Ausführung.
+Das Framework ermittelt einen oder mehrere Handler, die für den Request verantwortlich sind und übergibt ihnen den Request.</p>
+</li>
+<li><p>Der/die Handler bearbeiten den Request und ermitteln ein Ergebnis.</p>
+</li>
+<li><p>Der/die Handler kommunizieren über den Response ihr Ergebnis. Der Response enthält ebenfalls Validierungsregeln, die dem Konsumenten sagen, auf welchen Zustand des Response er sich bei einer erfolgreichen Ausführung verlassen kann.</p>
+</li>
+</ul>
+<p>Ebenfalls wird es dadurch möglich, Logik fast beliebig über Systeme zu verteilen ohne Konsument und Implementierung anpassen zu müssen, da der Aufrufende durch Erstellung des Requests und Verwendung des Verbs keine Annahmen trifft, wo der/die Handler implementiert sind und wie der Aufruf tatsächlich erfolgt. Auch die Wiederverwendung von implementierter Logik (Handler) wird durch diese Struktur vereinfacht.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

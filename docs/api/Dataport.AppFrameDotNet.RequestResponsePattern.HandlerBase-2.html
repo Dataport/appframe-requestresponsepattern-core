@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class HandlerBase&lt;TRequest, TResponse&gt;
+   | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class HandlerBase&lt;TRequest, TResponse&gt;
+   | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2">
+  
+  
+  <h1 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2" class="text-break">Class HandlerBase&lt;TRequest, TResponse&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Basisklasse für einen Handler, der für einen bestimmten Request-Typ zuständig ist.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">HandlerBase&lt;TRequest, TResponse&gt;</span></div>
+      <div class="level2"><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler-2.html">ActionHandler&lt;TRequest, TResponse&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler</a>&lt;TRequest&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.html">Dataport.AppFrameDotNet.RequestResponsePattern</a></h6>
+  <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.dll</h6>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class HandlerBase&lt;TRequest, TResponse&gt; : object, IHandler&lt;TRequest&gt; where TRequest : RequestBase&lt;TResponse&gt;, IRequestBase, IRequest&lt;TResponse&gt; where TResponse : ResponseBase, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRequest</span></td>
+        <td><p>Typ des Request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TResponse</span></td>
+        <td><p>Typ des zu instanzierenden Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_HandlerState_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.HandlerState*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_HandlerState" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.HandlerState">HandlerState</h4>
+  <div class="markdown level1 summary"><p>Handlerstatus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected dynamic HandlerState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>Handlerstatus.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_HandlerState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>...ist nicht Thread-Safe und kann somit statische Konfigurationsinformationen enthalten.</p>
+</div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Logger_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Logger*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Logger" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Logger">Logger</h4>
+  <div class="markdown level1 summary"><p>ILogger-Instanz für diesen Handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ILogger Logger { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ILogger</span></td>
+        <td><p>Logger-Instanz</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OmittedValidationMessages_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OmittedValidationMessages*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OmittedValidationMessages" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OmittedValidationMessages">OmittedValidationMessages</h4>
+  <div class="markdown level1 summary"><p>Gibt alle Validierungsmeldungen zurück, die in der aktuellen Ausführung
+festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IEnumerable&lt;IResponseMessage&gt; OmittedValidationMessages { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><p>Validierungsmeldungen, die in der aktuellen Ausführung festgestellt, aber vom Benutzer explizit unterdrückt wurden.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_RequestState_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.RequestState*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_RequestState" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.RequestState">RequestState</h4>
+  <div class="markdown level1 summary"><p>Request-spezifischer, interner Status des Handler.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected dynamic RequestState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>interner Status des Handler</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_RequestState_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>...ist somit Thread-Safe.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_CustomInitialization_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.CustomInitialization*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_CustomInitialization" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.CustomInitialization">CustomInitialization()</h4>
+  <div class="markdown level1 summary"><p>Eigene Initialisierungsschritte für den Handler ausführen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CustomInitialization()</code></pre>
+  </div>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_CustomInitialization_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Plugings hier über RegisterPlugin() hinzufügen!</p>
+</div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_EnsureInitialization_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.EnsureInitialization*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_EnsureInitialization" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.EnsureInitialization">EnsureInitialization()</h4>
+  <div class="markdown level1 summary"><p>Prüft, ob die Intialisierung durchgeführt wurde.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void EnsureInitialization()</code></pre>
+  </div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Evaluate_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Evaluate*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Evaluate__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Evaluate(`0)">Evaluate(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Die Methode die aufgerufen wird, wenn der Request auf Ausführbarkeit geprüft werden soll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Evaluate(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Der zu prüfende Request</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Execute_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Execute*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Execute__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Execute(`0)">Execute(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Die Methode die aufgerufen wird, wenn der Request ausgeführt werden soll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Execute(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_ExtendedRequestValidation_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.ExtendedRequestValidation*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_ExtendedRequestValidation__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.ExtendedRequestValidation(`0)">ExtendedRequestValidation(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Möglichkeit, weitere Validierung programmatisch durchzuführen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;IResponseMessage&gt; ExtendedRequestValidation(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><p>Validierungsmeldungen; oder eine leere Sequenz, wenn es keine Validierungsfehler gab.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_ExtendedResponseValidation_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.ExtendedResponseValidation*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_ExtendedResponseValidation__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.ExtendedResponseValidation(`0)">ExtendedResponseValidation(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Möglichkeit weitere Validierung programmatisch durchzuführen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;IResponseMessage&gt; ExtendedResponseValidation(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Ausgeführter Request mit dem Response der Ausführung.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">IResponseMessage</span>&gt;</td>
+        <td><p>Validierungsmeldungen; oder eine leere Sequenz, wenn es keine Validierungsfehler gab.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_GetOmittableValidationSourceIds_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.GetOmittableValidationSourceIds*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_GetOmittableValidationSourceIds__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.GetOmittableValidationSourceIds(`0)">GetOmittableValidationSourceIds(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Kann überschrieben werden, um Validierungsmeldungen festzulegen,
+die vom Anwender unterdrückt werden können.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;string&gt; GetOmittableValidationSourceIds(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Aktuell verarbeiteter Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Eine Sequenz mit den Source IDs der unterdrückbaren Validierungsmeldungen.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Implementation_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Implementation*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Implementation__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Implementation(`0)">Implementation(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Add your Code here! -- Hier ist in der abgeleiteten Klasse die eigentliche
+Business Logik zu implementieren.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Implementation(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Initialization_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Initialization*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_Initialization" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.Initialization">Initialization()</h4>
+  <div class="markdown level1 summary"><p>Initialisierung der Bearbeitungslogik.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Initialization()</code></pre>
+  </div>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnEnter_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnEnter*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnEnter__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnEnter(`0)">OnEnter(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'ExecuteEnterPlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnEnter(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnError__0_Exception_ResponseMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnError(`0,Exception,ResponseMessage)">OnError(TRequest, Exception, ResponseMessage)</h4>
+  <div class="markdown level1 summary"><p>Wird im ErrorHandler ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnError(TRequest request, Exception ex, ResponseMessage errorMessage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Request</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Exception</span></td>
+        <td><span class="parametername">ex</span></td>
+        <td><p>Ausgelöste Exception</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ResponseMessage</span></td>
+        <td><span class="parametername">errorMessage</span></td>
+        <td><p>Erstellte Message zur Exception</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnExit_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnExit*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnExit__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnExit(`0)">OnExit(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'ExitPlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnExit(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnFailure_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnFailure*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnFailure__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnFailure(`0)">OnFailure(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'OnFailurePlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnFailure(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnPostImplementation_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnPostImplementation*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnPostImplementation__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnPostImplementation(`0)">OnPostImplementation(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'PostImplementationPlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPostImplementation(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnPreImplementation_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnPreImplementation*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnPreImplementation__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnPreImplementation(`0)">OnPreImplementation(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'PreImplementationPlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnPreImplementation(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnSuccess_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnSuccess*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_OnSuccess__0_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.OnSuccess(`0)">OnSuccess(TRequest)</h4>
+  <div class="markdown level1 summary"><p>Wird vor 'OnSuccessPlugins' ausgeführt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnSuccess(TRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRequest</span></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>Auszuführender Request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_RegisterPlugin_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.RegisterPlugin*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_HandlerBase_2_RegisterPlugin_Dataport_AppFrameDotNet_RequestResponsePattern_IPlugin__0__Dataport_AppFrameDotNet_RequestResponsePattern_PluginPosition_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase`2.RegisterPlugin(Dataport.AppFrameDotNet.RequestResponsePattern.IPlugin{`0},Dataport.AppFrameDotNet.RequestResponsePattern.PluginPosition)">RegisterPlugin(IPlugin&lt;TRequest&gt;, PluginPosition)</h4>
+  <div class="markdown level1 summary"><p>Plugin progammatisch registrieren.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterPlugin(IPlugin&lt;TRequest&gt; plugin, PluginPosition pluginPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IPlugin-1.html">IPlugin</a>&lt;TRequest&gt;</td>
+        <td><span class="parametername">plugin</span></td>
+        <td><p>Plugin.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.PluginPosition.html">PluginPosition</a></td>
+        <td><span class="parametername">pluginPosition</span></td>
+        <td><p>Ausführungszeitpunkt des Plugins.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html">IHandler&lt;TRequest&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Benutzung | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Benutzung | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="benutzung">Benutzung</h1>
+
+<h2 id="einen-request-ausführen">Einen Request ausführen</h2>
+<p>Ein Request kann wie ein Befehl in einer Programmiersprache oder ein Kommando in einem Kommandozeilenprogramm verstanden werden . Der Klassenname des Request entspricht dabei dem Namen des Kommandos, die Eigenschaften stellen die Parameter dar.</p>
+<p>&quot;Abgesendet&quot; wird das Kommando mit einem der folgenden Verben:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do</td>
+<td>Führe aus. Bei Fehler wird eine Exception ausgelöst.</td>
+</tr>
+<tr>
+<td>Try</td>
+<td>Versuche auszuführen. Alle Fehler werden abgefangen.</td>
+</tr>
+<tr>
+<td>Evaluate</td>
+<td>Prüfe ob eine Ausführung möglich wäre (Validierung des Requests).</td>
+</tr>
+<tr>
+<td>Call</td>
+<td>Ähnlich Try, nur dass hier mehrere Ausführungen durch unterschiedliche Handler möglich sind.</td>
+</tr>
+</tbody>
+</table>
+<p>Die Verben werden direkt auf einen neu definierten Request angewendet:</p>
+<pre><code class="lang-CSharp">var response = new LoeschenDienststelle() { EntityId = 2 }.Try().Response;
+</code></pre>
+<p>Der Response enthält das Ergebnis der Ausführung. Da das Verb &quot;Try&quot; auch abgefangene Fehler als Rückmeldung zurückgeben kann, sollte man hier üblicher Weise in Folge erstmal prüfen ob die Ausführung erfolgreich war, am besten mit response.HasExecutedWithSuccess.</p>
+<p>Falls es zu Fehlern gekommen ist, stehen diese im Response in den Messages. Hier finden sich auch weitere Informationen, die der aufgerufene Programmteil seinem Aufrufer mitteilen wollte.</p>
+<p>Alle Logging-Einträge, die innerhalb der Ausführung eines Requests erzeugt werden erhalten als Scope den Typnamen des Requests und die Id des Requests.</p>
+<h2 id="einen-handler-implementieren">Einen Handler implementieren</h2>
+<p>Implementationsschritte:</p>
+<ul>
+<li>Handler von HandlerBase ableiten</li>
+<li>Request und Response als generische Parameter angeben</li>
+<li>Methode Implementation überschreiben</li>
+<li>ggf.  Plugins als Attribute  über  der  Klassendefinition zufügen</li>
+</ul>
+<pre><code class="lang-CSharp">    [TraceRequestExecution, TraceUserInformations]
+    public class GetWeisheitDesTagesHandler : HandlerBase&lt;GetWeisheitDesTages, GetWeisheitDesTagesResponse&gt;
+    {
+        protected override void Implementation(GetWeisheitDesTages request)
+        {
+            using (var context = Provider.Provide&lt;IRepository&gt;())
+            {
+                // Eintrag für Tag aus &quot;Datenbank&quot; holen
+                var entry = context.Set&lt;Weisheit&gt;().SingleOrDefault(x =&gt; x.Tag == request.Tag);
+  
+                //Wenn keiner gefunden wurden sind wir hier fertig
+                if (entry == null) return;
+  
+                // Ansonsten Text übernehmen
+                request.Response.Text = entry.Text;
+  
+                // Zusätzlicher Hinweis
+                if (request.Tag &gt; DateTime.Today)
+                    request.Response.AddMessage(
+                        new UserInformationMessage(&quot;F254157D-585C-499D-AE48-DFDD7D383ED7&quot;,
+&quot;Weisheiten aus der Zukunft sind nicht zu trauen!&quot;));
+            }
+        }
+    }
+</code></pre>
+<p>In der Implementierung ist nicht erforderlich:</p>
+<ul>
+<li>Try-Catch-Block</li>
+<li>Null-Check des Parameters Request</li>
+<li>Validierung des Parameters Request</li>
+<li>Tracing des Methodenaufrufs</li>
+</ul>
+<p>dies wird alles durch die Basisklasse bereits erledigt, bzw. im Falle des Tracing durch ein entsprechendes Plugin.</p>
+<p>Auch andere Cross-Cutting-Concerns wie z.B. Autorisierung sollen über Plugins realisiert werden, so dass die Implementierung frei von solchen Concerns und Boiler-Plate-Code bleibt.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

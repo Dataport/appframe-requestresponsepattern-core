@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bausteine | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Bausteine | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="bausteine">Bausteine</h1>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Baustein</th>
+<th style="text-align: left;">Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Request</td>
+<td style="text-align: left;">Ein Objekt welches eine Anfrage auf eine Funktionsausführung darstellt.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Handler</td>
+<td style="text-align: left;">Ein Objekt das für einen bestimmten Request-Typen verantwortlich ist und diesen bearbeitet.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Response</td>
+<td style="text-align: left;">Ein Objekt welches das Ergebnis einer Bearbeitung eines Request darstellt.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Plugin</td>
+<td style="text-align: left;">Ein Objekt das einen Handler um Querschnittsfunktionen (Cross-Cutting-Concerns) erweitern kann.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="request-und-response">Request und Response</h2>
+<p>Ein Request definiert einen Befehl, der mit den im Request angegeben Parametern ausgeführt werden kann. Bei der Verarbeitung eines Requests wird von der Kernimplementierung ein oder mehrere Handler bestimmt, die für diesen Request zuständig sind und diesen bearbeiten (siehe Abschnitt <em>Einen Request bearbeiten</em>). Soll Dependency Injection genutzt werden, so muss dies explizit  (z.B. über die entsprechende Integrationskomponente) konfiguriert werden.</p>
+<p>Ein Request hat Validierungsregeln, die vom Aufrufenden eingehalten werden müssen, damit der Handler den Request bearbeitet. Dazu werden standardmäßig DataAnnotations verwendet; andere Validierungsmechanismen müssen konfiguriert werden.</p>
+<p>Nach der Bearbeitung hängt am Request ein Response-Objekt, welches das Ergebnis der Ausführung darstellt und z.B. Daten zurückgibt.</p>
+<p>Auch der Response hat Validierungsregeln. Nur wenn die von Handler eingehalten wurden gilt der Response als erfolgreich ausgeführt und hat einen entsprechenden Status.</p>
+<p>Durch die Validierungsregeln auf Request und Response entsteht ein verbindlicher Kontrakt zwischen Aufrufenden und Aufgerufenen.  Dies verhindert undefinierte Zustände und Fehler wie NullReferenceExceptions, da sich beide Parteien auf einen bestimmten Stand verlassen können. Zur Definition des Kontrakts wird lediglich die Teilkomponente RequestResponsePattern.Contracts benötigt, um die Abhängigkeiten minimal zu halten (.NET Standard-kompatibel).</p>
+<h3 id="response-message">Response Message</h3>
+<p>Ein wichtiger Teil des Request-Response-Pattern ist es, dass die Responses Informationen zur Ausführung in den so genannten Messages zurückgeben können. Diese können von unterschiedlichem Typ sein.</p>
+<p>Folgende Typen sind in der Basisimplementierung definiert:</p>
+<ul>
+<li><strong>ExceptionMessage</strong>: Ein abgefangener Laufzeitfehler.</li>
+<li><strong>ValidationMessage</strong>: Eine Validierungsmeldung.</li>
+<li><strong>UserInformationMessage</strong>: Ein Hinweis für den Endbenutzer.</li>
+<li><strong>ResponseMessage</strong>: Stellt den Response eines anderen Request als Information dar.</li>
+</ul>
+<p>Messages haben</p>
+<ul>
+<li>eine UserFriendlyCaption, ein Text der explizit zur Anzeige für den Endbenutzer geeignet sein soll,</li>
+<li>Details, ergänzender Text welcher je nach Typ zu verwenden ist,</li>
+<li>einen Content, welcher strukturierte Daten wie die auslösende Exception oder das Original Validationresult enthalten kann,</li>
+<li>sowie eine SourceId, die die  Quelle der Meldung eindeutig identifizieren soll.</li>
+</ul>
+<h2 id="handler">Handler</h2>
+<p>Der Handler bearbeitet einen Request. Dabei werden vor und nach der vom Entwickler implementierten eigentlichen Funktion in einer Sequenz Validierungen und benutzerdefinierte Aspekte ausgeführt.</p>
+<h3 id="sequenz-im-normalfall">Sequenz im Normalfall</h3>
+<ol>
+<li>Zuerst werden benutzerdefinierte Aspekte ausgeführt, die die Position Enter haben.</li>
+<li>Der Request wird validiert.</li>
+<li>Es werden benutzerdefinierte Aspekte ausgeführt, die die Position PreImplementation haben.  Diese können bereits von einem validem Request ausgehen.</li>
+<li>Hier wird die eigentliche Funktionalität des Handlers ausgeführt.</li>
+<li>Es werden benutzerdefinierte Aspekte ausgeführt, die die Position PostImplementation haben.</li>
+<li>Der Response wird validiert.</li>
+<li>Benutzerdefinierte Aspekte auf der Position OnSuccess werden ausgeführt wenn der Response erfolgreich validiert wurde.</li>
+<li>Benutzerdefinierte Aspekte auf der Position Exit werden immer vor der Rückgabe des Response ausgeführt.</li>
+</ol>
+<p>Generell gilt, dass die Sequenz durch eine Exception oder einen Validierungsfehler unterbrochen wird.</p>
+<h3 id="sequenz-bei-einer-exception">Sequenz bei einer Exception</h3>
+<ol>
+<li>Der Fehler wird im Trace und in den Messages protokolliert.</li>
+<li>Benutzerdefinierte Aspekte auf der Position OnError werden ausgeführt nachdem eine Exception abgefangen wurde.</li>
+<li>Bei einem Abbruch der Verarbeitung werden benutzerdefinierte Aspekte der Position OnFailure ausgeführt.</li>
+<li>Benutzerdefinierte Aspekte auf der Position Exit werden immer vor der Rückgabe des Response ausgeführt.</li>
+</ol>
+<h3 id="sequenz-bei-einem-sonstigen-abbruch-zb-validierungsfehler">Sequenz bei einem sonstigen Abbruch (z.B. Validierungsfehler)</h3>
+<ol>
+<li>Bei einem Abbruch der Verarbeitung werden benutzerdefinierte Aspekte der Position OnFailure ausgeführt.</li>
+<li>Benutzerdefinierte Aspekte auf der Position Exit werden immer vor der Rückgabe des Response ausgeführt.</li>
+</ol>
+<h2 id="erweiterbarkeit">Erweiterbarkeit</h2>
+<p>Plugins bzw. AddIns erweitern Handler um Cross-Cuttig-Concerns wie z.B. Logging und Authorization. Sie können an diversen Stellen der Verarbeitung positioniert werden.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

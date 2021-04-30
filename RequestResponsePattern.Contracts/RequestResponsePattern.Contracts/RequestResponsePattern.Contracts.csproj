@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Dataport.AppFrameDotNet.RequestResponsePattern.Contracts</AssemblyName>
+    <RootNamespace>Dataport.AppFrameDotNet.RequestResponsePattern.Contracts</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>4.0.1</Version>
+    <FileVersion>4.0.0.0</FileVersion>
+    <Product>AppFrameDotNet</Product>
+    <Company>Dataport</Company>
+    <Authors>Dataport</Authors>
+    <PackageReleaseNotes>.NET Standard 2.0</PackageReleaseNotes>
+    <PackageTags>AppFrameDotNet RequestResponsePattern</PackageTags>
+    <Description>Request-Handler-Response-Pattern: Implementierung der Contracts (Request und Response Basisklassen).</Description>
+    <Copyright>(c) Dataport 2021</Copyright>
+    <PackageProjectUrl>https://zusammenarbeit.ondataport.de/produkt/dataport_appframedotnet/Dokumentation/Dataport.AppFrameDotNet.RequestResponsePattern?Web=1</PackageProjectUrl>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <PackageIcon>appframe.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard1.4\Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\appframe.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

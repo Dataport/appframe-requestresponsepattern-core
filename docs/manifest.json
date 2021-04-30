@@ -1,0 +1,901 @@
+{
+  "homepages": [],
+  "source_base_path": "E:/BA/A2/295/s/_Dokumentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.ActionHandler-2.html",
+          "hash": "kuGL36VrFDHagYoQK/oOrkkk8pH3zQx6zb9oEjE2kJM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IBinaryResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IBinaryResponse.html",
+          "hash": "VMIBCPQpWDs11v9kiAy3hyTCAPVD4++fsfkvwthJWpE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IHasRequestAnnotation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IHasRequestAnnotation.html",
+          "hash": "ClIAFPvHdLfFbQhKFXfc8mEQb0F0DmmykalF/O9WP6I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IHasRequestKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IHasRequestKey.html",
+          "hash": "IbIwjpk+eWMTTiZi1PXJDF+WbR6f4L0mgUAbdMq/5nc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequest-1.html",
+          "hash": "eU5vI4NsZ2u/QG4sBeUZXyR2DCtrt7rZHe+BORR5YmA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IRequestBase.html",
+          "hash": "Os3PQWwtKCjvf2ukyAFGETV43QVE3PdfitWhLCNtI6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse.html",
+          "hash": "Wy8LB7vafAwrtxjSVTYPluRrwDNK8PTo1OFxQ/JclH4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html",
+          "hash": "GqCnPezmhZirW9wojjQd5I9WvlMbPQXUQWcXz9iGN88="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.RequestBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.RequestBase-1.html",
+          "hash": "HC3qgZO+RMUrAPapnMjja1q1V7ds1OWoFedAZbl+UDw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.RequestWith-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.RequestWith-2.html",
+          "hash": "217Fpb8+Y3n6Rr7ijztNUaTHdfPSTbEhbR7wtQxKfcQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.html",
+          "hash": "n7nIoFWxHJMzEH5NvPVRpHW8PXW49MUaNIH1DWyfvcs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseMessage.html",
+          "hash": "o8wvJPVtUiWJ7iVANKpJmF3uHODXTm+CvZF2++/cybY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWith-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWith-1.html",
+          "hash": "0DHVXhKdauVIB/+aBjXSHNfBPQ6edcx/0OGkMwv8UiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWithMany-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWithMany-1.html",
+          "hash": "YDeDaqPGbUhOFgjT3KfOixW6CYckfC47KrTJXqDFVrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.html",
+          "hash": "hZr5OvCrw2lPifQ+wOpml/to7bf0pxmpQ/2LqwztHs8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionDefinition-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionDefinition-2.html",
+          "hash": "vnhfu+MxtRfBWmO10b0adidcDtESAJU1I/9XoE/UcLY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionDefinitionAddInAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionDefinitionAddInAttribute.html",
+          "hash": "JMGFtMpPBr/fK9sr1Bpt8h4rleSaGJvXBEgiKVJT+8k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionHandler-1.html",
+          "hash": "wGLrNt8gy2WGRwj8AxoU/DgPYQnHCZPpISDmhGmjXww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionPosition.html",
+          "hash": "rNiyluU/XaOd76Nzx/1qTfoNRKFHWU+2UufHPasjWRo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionPositionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.ActionPositionTools.html",
+          "hash": "gNpyMWQq4bhF+h73nrOBHVkecomN1DAiHEYw5CpBVSw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.Handler-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.Handler-2.html",
+          "hash": "m1rFrZ7XdbVFXiidcBNjnoNsWvRAmEYuuMrAdH8S/sY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.HandlerBase2-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.HandlerBase2-2.html",
+          "hash": "4bbbNwqS8qzWE41VGoBeR4Cw1uOUM+FgY8N+UbtHRt4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.HandlerCore-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.HandlerCore-2.html",
+          "hash": "5MWGTNdPqwHlKCMYnKmyI+ywRHE28QOIWuW3KWrTuXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.IActionDefinitionSource.html",
+          "hash": "eu7oBy52G+ugGev+uXVdPXY04Q2yCDoh0ydkH2ulWic="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.IRequestContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.IRequestContext.html",
+          "hash": "RGEnGABSWATcg/j4AYIJKyEHN2F35NPPKIl4fKPmj3M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.RequestContext.html",
+          "hash": "SZhlJgJaz3lhT2ayebt3KrU48KMWcVQr5GT4XVXRUUo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Core.html",
+          "hash": "vdHOntmyTLLhJEi422TKDmYNdyQKm+YV2CCf/xbOvNg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.DefaultResponseMessageCategories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.DefaultResponseMessageCategories.html",
+          "hash": "+8e53bxqkSi6H1hTPKcrQXLQ2Z+Erj02WiB3D4Cmzjg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.HandlerInitializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.HandlerInitializationException.html",
+          "hash": "PfqQpVk71+9nXAVjL0gG7Mn+vb2auH6Msj5PA4X9yrc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.HandlerNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.HandlerNotFoundException.html",
+          "hash": "d+xUlJzvbzfd8HN9CMTyIDaIglnAv4ZDgC7pQ9aYu8M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.MulipleHandlerFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.MulipleHandlerFoundException.html",
+          "hash": "uFa3ohbvUn7/aOAMXonVr/y1gvTLw9AbdOrrGMjLnaM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.RequestFailedException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.RequestFailedException.html",
+          "hash": "091zk0ixO2S0NJb/Hhp8SFM6m2XhWHGrXl8a7nD98dg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Exceptions.html",
+          "hash": "0wydHzrbvQA2nFR621bKOSiEQ73foOOP96gUFELRvPg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerBase-2.html",
+          "hash": "/YjX8tPV4p+iBUAjyOe1t7wIiq9yZH58J+IPnQX4bo8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.HandlerProviderForRequest-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.HandlerProviderForRequest-1.html",
+          "hash": "2R0F6Wz8ex8rRbM9anwt0eIrpCyG4WhYgURv/R6ZAI0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.IHandlerProvider.html",
+          "hash": "m1K6Rs5JuDL4EoIMtIdc6yeHNaCG3tSvZw1bWbx48og="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.RuntimeListeners.html",
+          "hash": "1m8TqZErSn7IxQVSklmWQ9YlYG7TgVJr8gwQp9t7F7s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.ServiceProviderHandlerProvider.html",
+          "hash": "KYic/QZNvsFRdjDQ9Xr+xWpdYtXWZiAy1g2+pcDxyMk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider.html",
+          "hash": "YwDml1zslJAWzL9kx67yJqIgvx0WKgPnXdc6JRdor0w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.IHandler-1.html",
+          "hash": "y/XXcdV9+QGM3c3APLmkPhJywRtemNi7N0ecE13hklo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.IPlugin-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.IPlugin-1.html",
+          "hash": "mtwZEiggpWmqmY8a84BgA6QUPb9PogyWa9qdR4iLbDo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.LocalRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.LocalRuntime.html",
+          "hash": "D9mGqoX/Thgq6zas9oINmBYHd7/nFgtQgRsa4lJsYGw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.MessageLoggingExtensions.html",
+          "hash": "z6qIfqr4lLES+x38DDArTNhfXYzdXe/hc4e0cEx+E3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Logging.html",
+          "hash": "S5wDocusIeiJXpnGUrtLEAtDfhXUakJj3+Wimj0HuLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.MessageFactoryExtensions.html",
+          "hash": "NOmTumrrOuBUHiduOTkZ67FZYi9haEDZAOQWBvlhHTo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.PluginAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.PluginAttribute.html",
+          "hash": "88FjBgrh1JIky7WkK55U93P76m4A3JkEsxQoLsLsCjc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.PluginPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.PluginPosition.html",
+          "hash": "3Bx/WzyYXNCAIfU14eOyuVphOz42mn0fASu3d7RHIio="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestExtensions.html",
+          "hash": "obU1gFk1nHw3M/efcPjWXc1OyD3mu+u4BJNk8P/K5gw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RequestOperations.html",
+          "hash": "5JDbEORtbzOZJX+hKrFURxjFnkJ1NlmMqIMi34EIg7I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.ResponseExtensions.html",
+          "hash": "K7JN1wY6scSPa8rSqNrqpYG05IkiM1EiYdqrEPrVf2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Runtime.html",
+          "hash": "/fsjQ/Kyfuvq1T+WNzYHi5TOspfXMxh8WUYFLdl0XP0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.RuntimeExtensions.html",
+          "hash": "hyFLQXj8egTdXJNVc0DGHCdStNR/nrwUsxMOnpxs7hU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.State.html",
+          "hash": "vk9HHAfln6DsrVoEok3D4fMq5kyMWAnTSoKh5klnfek="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.DataAnnotationValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.DataAnnotationValidator.html",
+          "hash": "63COahMPtq1ZzdqAqiFe12U9zlokUvkQCN4xdX3oUbc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.IValidator.html",
+          "hash": "54iTp1BGyw8enjbUDKfU/ErYgCL0AcPng8cwTD3rbYE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.Validation.html",
+          "hash": "A8NfTI6vk1loZGFnQJjbomH2NU5R0EUwuz+NfGuAiVo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.ValidationResponseCollection.html",
+          "hash": "7PtnHshc6ydReAQ+MRcee/SjK6w72djo6kAEp0ms/Hg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.Validation.html",
+          "hash": "juxdbzyBx3jSfXltoUFQ9QC0FXIVvHADimG7RoU2lak="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Dataport.AppFrameDotNet.RequestResponsePattern.html",
+          "hash": "zVXvNxp/DnngsBVDGjDAIbdML2D8McCtiM7EPI01CS0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Ypjfq6Zf1athUpfuHU9LuKld3OT1mGXnl9r9Oa+4L1o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "jDglXSNUY7TtUYbGYh26k16fNHSghmfASBIvUHO2cNM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/01-Einleitung.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/01-Einleitung.html",
+          "hash": "lIVY5riTZIjqjcVh7UoMaWaeWnywzIaj/vJcJKIhoAs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/02-Bausteine.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/02-Bausteine.html",
+          "hash": "qXTGyz8AEnv31xWzWcv9AxMftPUmLbRr/lW863J0Uoc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/03-Benutzung.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/03-Benutzung.html",
+          "hash": "3h2lPU5W+2tnT8qz2A1Jqz+3uJorN6rBgvUv4vTEdBg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/04-Entwurfsmuster.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/04-Entwurfsmuster.html",
+          "hash": "1q8XYIyaFsskHgUJ2B0tEVTFTjnNmeC4UpsAEljiDV4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "/rCmYQc4cJf11TXw26aOUrwv4zHseVQD3A/OehouLH0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/appFrame.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/appFrame.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/combined_logos.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/combined_logos.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "+adBgUOP8B5DfOry2QnA8X7pvf6+zzsqJtIdaJHPLWU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "2YheXcADzND/LSo9Z+qNjGqGv+3fdRYTgKS1NU+GmwA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 6,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 59,
+          "skipped_file_count": 0
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+# RequestResponsePattern.Contracts build definition
+
+trigger:
+  branches:
+      include:
+      - master
+  paths:
+    include:
+    - RequestResponsePattern.Contracts
+
+variables:
+  buildConfiguration: 'Release'
+  buildPlatform: 'Any CPU'
+
+resources:
+  repositories:
+    - repository: templates
+      type: git
+      name: \!BuildTemplates
+      ref: refs/tags/v1.3.2
+
+steps:
+- template: appframedotnet-package.yml@templates
+  parameters:
+    solution: 'RequestResponsePattern.Contracts/RequestResponsePattern.Contracts.sln'
+    nugetConfigPath: 'RequestResponsePattern.Contracts/NuGet.Config'
+    packageProjectDirectory: 'RequestResponsePattern.Contracts/RequestResponsePattern.Contracts'
+
+# Dokumentation bauen und in Verzeichnis hinterlegen
+- task: chrismason.vsts-docfxtasks.docfx-extension-build-task.DocFxTask@0
+  displayName: 'Create DocFx Documentation'
+  inputs:
+    solution: '_Dokumentation/docfx.json'
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(build.SourcesDirectory)/_Dokumentation/docs'
+    Contents: '**/*.*'
+    TargetFolder: '$(build.artifactstagingdirectory)/Dokumentation'
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'

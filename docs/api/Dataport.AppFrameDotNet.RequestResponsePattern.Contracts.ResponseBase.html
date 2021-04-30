@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResponseBase
+   | AppFrameDotNet.RequestResponsePattern </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResponseBase
+   | AppFrameDotNet.RequestResponsePattern ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../images/appFrame.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/combined_logos.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase">
+  
+  
+  <h1 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase" class="text-break">Class ResponseBase
+  </h1>
+  <div class="markdown level0 summary"><p>Basisklasse für Rückmeldungen.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ResponseBase</span></div>
+      <div class="level2"><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWith-1.html">ResponseWith&lt;T&gt;</a></div>
+      <div class="level2"><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseWithMany-1.html">ResponseWithMany&lt;T&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse.html">IResponse</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.html">Dataport.AppFrameDotNet.RequestResponsePattern.Contracts</a></h6>
+  <h6><strong>Assembly</strong>: Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.dll</h6>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResponseBase : IResponse</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasEvaluatedWithSuccess_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasEvaluatedWithSuccess*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasEvaluatedWithSuccess" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasEvaluatedWithSuccess">HasEvaluatedWithSuccess</h4>
+  <div class="markdown level1 summary"><p>Status, ob der Request eine Evaluation (Vorprüfung) mit Erfolg wiedergibt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasEvaluatedWithSuccess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, wenn die Vorprüfung erfolgreich war.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasExecutedWithSuccess_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasExecutedWithSuccess*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasExecutedWithSuccess" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasExecutedWithSuccess">HasExecutedWithSuccess</h4>
+  <div class="markdown level1 summary"><p>Status, ob der Request eine Ausführung mit Erfolg wiedergibt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasExecutedWithSuccess { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, wenn die Ausführung erfolgreich war.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasFailed_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasFailed*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_HasFailed" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.HasFailed">HasFailed</h4>
+  <div class="markdown level1 summary"><p>Status, ob der Response eine Ausführung mit Fehler wiedergibt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFailed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, wenn die Ausführung nicht erfolgreich war.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Metadata_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Metadata*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Metadata" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"><p>Zugriff auf die allgemeinen Response-Metadaten.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResponse Metadata { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse.html">IResponse</a></td>
+        <td><p>Metadaten</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Metadata_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Diese Metadaten können auch mit einem manuellem Cast auf 'IResponseBase' sichtbar gemacht werden.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessage*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessage_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessage(Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage)">AddMessage(IResponseMessage)</h4>
+  <div class="markdown level1 summary"><p>Einzelne Message hinzufügen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMessage(IResponseMessage message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>Message</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessages_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_AddMessages_System_Collections_Generic_IEnumerable_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponseMessage__" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.AddMessages(System.Collections.Generic.IEnumerable{Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage})">AddMessages(IEnumerable&lt;IResponseMessage&gt;)</h4>
+  <div class="markdown level1 summary"><p>Mehrere Messages hinzuzufügen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddMessages(IEnumerable&lt;IResponseMessage&gt; messages)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
+        <td><span class="parametername">messages</span></td>
+        <td><p>Auflistung von Messages</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_MarkAsFailed_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.MarkAsFailed*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_MarkAsFailed" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.MarkAsFailed">MarkAsFailed()</h4>
+  <div class="markdown level1 summary"><p>Response als Failed kennzeichnen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkAsFailed()</code></pre>
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Executed_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Executed*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Executed" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Executed">IResponse.Executed</h4>
+  <div class="markdown level1 summary"><p>Status, ob der Request ausgeführt wurde.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IResponse.Executed { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, wenn der Request ausgeführt wurde.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Failed_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Failed*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Failed" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Failed">IResponse.Failed</h4>
+  <div class="markdown level1 summary"><p>Status, ob der Request nicht erfolgreich ausgeführt wurde.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IResponse.Failed { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true, wenn der Request nicht erfolgreich war.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Id_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Id*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Id" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Id">IResponse.Id</h4>
+  <div class="markdown level1 summary"><p>Eindeutige ID der Antwort.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Guid IResponse.Id { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><p>GUID der Antwort</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Messages_" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Messages*"></a>
+  <h4 id="Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_ResponseBase_Dataport_AppFrameDotNet_RequestResponsePattern_Contracts_IResponse_Messages" data-uid="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.ResponseBase.Dataport#AppFrameDotNet#RequestResponsePattern#Contracts#IResponse#Messages">IResponse.Messages</h4>
+  <div class="markdown level1 summary"><p>Rückmeldungen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;IResponseMessage&gt; IResponse.Messages { get; set; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponseMessage.html">IResponseMessage</a>&gt;</td>
+        <td><p>Liste mit Rückmeldungen</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts.IResponse.html">IResponse</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © 2021 Dataport AöR
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

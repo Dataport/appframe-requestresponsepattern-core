@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestResponsePattern", "RequestResponsePattern\RequestResponsePattern.csproj", "{FDBAEAED-5529-43F4-9147-77A8AC19F61A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestResponsePattern.Tests", "RequestResponsePattern.Tests\RequestResponsePattern.Tests.csproj", "{799F7F1D-E7E5-4041-9E4E-B959AFCAFFB0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{483D1608-B812-4292-905B-C7E712662087}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreDemo", "DotNetCoreDemo\DotNetCoreDemo.csproj", "{A39936D8-CD37-424A-8428-9E409D71EC73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreWebApiDemo", "DotNetCoreWebApiDemo\DotNetCoreWebApiDemo.csproj", "{443FDB00-012C-4325-A561-F5320FE42BAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dokumentation", "Dokumentation", "{B6B9145D-1242-4C63-9B6B-98FD5EA500C9}"
+	ProjectSection(SolutionItems) = preProject
+		..\_Dokumentation\docfx.json = ..\_Dokumentation\docfx.json
+		..\_Dokumentation\index.md = ..\_Dokumentation\index.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "articles", "articles", "{62B81EAA-584F-4037-8AD0-CBAF6902FC99}"
+	ProjectSection(SolutionItems) = preProject
+		..\_Dokumentation\articles\.order = ..\_Dokumentation\articles\.order
+		..\_Dokumentation\articles\01-Einleitung.md = ..\_Dokumentation\articles\01-Einleitung.md
+		..\_Dokumentation\articles\02-Bausteine.md = ..\_Dokumentation\articles\02-Bausteine.md
+		..\_Dokumentation\articles\03-Benutzung.md = ..\_Dokumentation\articles\03-Benutzung.md
+		..\_Dokumentation\articles\04-Entwurfsmuster.md = ..\_Dokumentation\articles\04-Entwurfsmuster.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{6CE8FBA3-9C9B-4263-B678-CCCB1097C871}"
+	ProjectSection(SolutionItems) = preProject
+		..\_Dokumentation\api\index.md = ..\_Dokumentation\api\index.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDBAEAED-5529-43F4-9147-77A8AC19F61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBAEAED-5529-43F4-9147-77A8AC19F61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBAEAED-5529-43F4-9147-77A8AC19F61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBAEAED-5529-43F4-9147-77A8AC19F61A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799F7F1D-E7E5-4041-9E4E-B959AFCAFFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799F7F1D-E7E5-4041-9E4E-B959AFCAFFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799F7F1D-E7E5-4041-9E4E-B959AFCAFFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799F7F1D-E7E5-4041-9E4E-B959AFCAFFB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A39936D8-CD37-424A-8428-9E409D71EC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A39936D8-CD37-424A-8428-9E409D71EC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A39936D8-CD37-424A-8428-9E409D71EC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A39936D8-CD37-424A-8428-9E409D71EC73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{443FDB00-012C-4325-A561-F5320FE42BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{443FDB00-012C-4325-A561-F5320FE42BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{443FDB00-012C-4325-A561-F5320FE42BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{443FDB00-012C-4325-A561-F5320FE42BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A39936D8-CD37-424A-8428-9E409D71EC73} = {483D1608-B812-4292-905B-C7E712662087}
+		{443FDB00-012C-4325-A561-F5320FE42BAC} = {483D1608-B812-4292-905B-C7E712662087}
+		{62B81EAA-584F-4037-8AD0-CBAF6902FC99} = {B6B9145D-1242-4C63-9B6B-98FD5EA500C9}
+		{6CE8FBA3-9C9B-4263-B678-CCCB1097C871} = {B6B9145D-1242-4C63-9B6B-98FD5EA500C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6542548-1B5C-4412-9F9D-9D196A79B5F9}
+	EndGlobalSection
+EndGlobal

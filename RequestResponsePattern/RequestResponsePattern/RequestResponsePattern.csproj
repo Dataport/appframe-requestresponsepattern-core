@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Dataport.AppFrameDotNet.RequestResponsePattern</AssemblyName>
+    <RootNamespace>Dataport.AppFrameDotNet.RequestResponsePattern</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>4.3.2</Version>
+    <Authors>Dataport AppFrameDotNet Team</Authors>
+    <Company>Dataport</Company>
+    <Product>AppFrameDotNet</Product>
+    <Description>Request-Handler-Response-Pattern.</Description>
+    <Copyright>(c) Dataport 2021</Copyright>
+    <PackageReleaseNotes>Migration nach .NET Standard (4.0 ff)</PackageReleaseNotes>
+    <DocumentationFile>.\bin\Dataport.AppFrameDotNet.RequestResponsePattern.xml</DocumentationFile>
+    <PackageIcon>appframe.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts" Version="4.0.0" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\appframe.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
