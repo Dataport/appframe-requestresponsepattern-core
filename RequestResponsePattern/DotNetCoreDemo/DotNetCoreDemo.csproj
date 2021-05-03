@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dataport.AppFrameDotNet.Logging" Version="5.3.2" />
     <PackageReference Include="Dataport.AppFrameDotNet.RequestResponsePattern.Contracts" Version="4.0.0" />
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.0" />

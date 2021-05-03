@@ -1,6 +1,4 @@
-﻿using Dataport.AppFrameDotNet.Logging;
-using Dataport.AppFrameDotNet.Logging.AppFrameConsole;
-using Dataport.AppFrameDotNet.RequestResponsePattern;
+﻿using Dataport.AppFrameDotNet.RequestResponsePattern;
 using Dataport.AppFrameDotNet.RequestResponsePattern.HandlerProvider;
 using DotNetCoreDemo.Contracts;
 using DotNetCoreDemo.Logic;
@@ -21,11 +19,7 @@ namespace DotNetCoreDemo
                 builder
                     .AddFilter("Dataport", LogLevel.Trace)
                     .AddFilter("DotNetCoreDemo", LogLevel.Trace)
-                    .AddAppFrameConsole(new AppFrameConsoleConfiguration
-                    {
-                        AppendExceptionToLog = true,
-                        IncludeScopes = true
-                    });
+                    .AddConsole();
             });
 
             Runtime.Current = new Runtime(loggerFactory,
