@@ -63,14 +63,14 @@
 <h1 id="requestresponsepattern"><p align="center">RequestResponsePattern</p></h1>
 
 <h2 id="über-das-projekt">Über das Projekt</h2>
-<p>RequestResponsePattern bietet als Komponente eine kleine Sammlung von Hilfsklassen, Models und Extensions ohne externe Abhängigkeiten an. Sie lässt sich so problemlos in ein Projekt einbinden ohne Konflikte mit anderen Komponenten zu erzeugen.</p>
-<p>RequestResponsePattern soll häufig wiederkehrende Aufgaben erleichtern, die mit den Bord-Mitteln des .NET-Frameworks nur mit sich wiederholendem Boiler-Plate-Code umgesetzt werden können. Die Funktionen sind so entworfen, dass sie komfortabel und leicht verständlich anzuwenden sind.</p>
-<p>Dazu gehören u.a.:</p>
+<p>Request-Response-Pattern bietet als Komponente eine Basis zur Entwicklung nach dem Grundsatz des <em>Design by Contract</em>. Die Signatur einer Funktion wird dabei durch Klassen modelliert, sogenannte Requests für Eingabeparameter und Responses für Rückgabewerte. Diese legen neben der reinen Struktur der Daten auch weitere Regeln zu Vor- und Nachbedingungen fest, beispielsweise über Validierungsattribute. Dadurch sind die einzuhaltenden Verträge für die Konsumenten transparent ersichtlich.</p>
+<p>Die Implementation der Funktion erfolgt über sogenannte Handler, die einen eingehenden Request verarbeiten und das Ergebnis in einem Response festhalten.</p>
+<p>Die Komponente löst dabei viele typische Problemstellungen, wie z.B.:</p>
 <ul>
-<li>Umgang mit Collections und weiteren Datentypen aus dem .NET Framework</li>
-<li>Erstellung von Expressions zur Laufzeit</li>
-<li>konkrete Implementierungen für Vergleichsoperationen zwischen Objektinstanzen</li>
-<li>weitere Hilfen im Bereich Reflection</li>
+<li>Die Ausgabe von Meldungen zusätzlich zum Ergebnis einer Funktion</li>
+<li>Das Einstreuen von Cross-Cutting-Concerns über aspektorientierte Ansätze</li>
+<li>Das Auflösen eines zuständigen Handlers zur Laufzeit</li>
+<li>Die Unterstützung mehrerer Handler für einen Request</li>
 </ul>
 <h3 id="appframedotnet">AppFrameDotNet</h3>
 <p>Bei RequestResponsePattern handelt es sich um eine Komponente des Frameworks AppFrameDotNet.</p>
@@ -79,7 +79,7 @@
 <h2 id="das-repository">Das Repository</h2>
 <p>Dieses Repository enthält den gesamten Quellcode sowie die Entwicklungsdokumentation der Komponente RequestResponsePattern. Die Arbeitssprache ist Deutsch.</p>
 <h3 id="lizenz">Lizenz</h3>
-<p>Das Projekt ist unter der MIT-Lizenz lizenziert. Nähere Informationen dazu findet ihr hier: <a href="https://github.com/Dataport/appframe-requestresponsepattern/blob/main/LICENCE">Lizenzinformationen</a>.</p>
+<p>Das Projekt ist unter der MIT-Lizenz lizenziert. Nähere Informationen dazu findet ihr hier: <a href="https://github.com/Dataport/appframe-requestresponsepattern-core/blob/main/LICENCE">Lizenzinformationen</a>.</p>
 <h3 id="community-und-contribution">Community und Contribution</h3>
 <p>Derzeit ist eine Beteiligung durch Dritte noch nicht möglich. Wir arbeiten an den organisatorischen Vorbedingungen dies zukünftig möglich zu machen.</p>
 <h2 id="über-uns">Über uns</h2>
